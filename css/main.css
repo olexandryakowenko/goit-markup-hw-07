@@ -192,9 +192,9 @@ p {
   fill: currentColor;
   margin-right: 10px;
 }
-
-.icon-envelope:hover,
-.icon-smartphone:hover {
+.icon-envelope:hover, .icon-envelope:focus,
+.icon-smartphone:hover,
+.icon-smartphone:focus {
   fill: var(--accent-color);
 }
 
@@ -497,11 +497,9 @@ p {
   color: var(--footer-logo-studio-color);
   transition: var(--transition-time);
 }
-
 .subscribe-email:hover {
   border: 1px solid var(--accent-color);
 }
-
 .subscribe-email:focus {
   outline: none;
   border: 1px solid var(--accent-color);
@@ -574,13 +572,10 @@ p {
   transition: var(--transition-time);
   cursor: pointer;
 }
-
 .hero-button-modal:active {
   background-color: #188ce8;
 }
-
-.hero-button-modal:focus,
-.hero-button-modal:hover {
+.hero-button-modal:focus, .hero-button-modal:hover {
   background-color: #188ce8;
 }
 
@@ -666,10 +661,13 @@ p {
   text-align: center;
   background-color: var(--bg-team-section-color);
 }
-
 .team .section-title {
   padding-top: 0;
   margin-bottom: 50px;
+}
+.team .card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list {
@@ -682,11 +680,6 @@ p {
   background-color: var(--bg-team-card-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team .card-description {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .team-title {
@@ -711,6 +704,11 @@ p {
   column-gap: 10px;
 }
 
+.social-icon {
+  fill: var(--icons-color);
+  transition: fill var(--transition-time);
+}
+
 .social-link {
   display: flex;
   align-items: center;
@@ -721,19 +719,10 @@ p {
   background-color: #ffffff;
   transition: background-color var(--transition-time);
 }
-
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--accent-color);
 }
-
-.social-icon {
-  fill: var(--icons-color);
-  transition: fill var(--transition-time);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-link:hover .social-icon, .social-link:focus .social-icon {
   fill: #ffffff;
 }
 
@@ -760,9 +749,7 @@ p {
   transition: var(--transition-time);
   border-radius: 4px;
 }
-
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -802,14 +789,11 @@ p {
   line-height: 1.62;
   cursor: pointer;
 }
-
-.btn-filter:hover,
-.btn-filter:focus {
+.btn-filter:hover, .btn-filter:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .btn-filter.current {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
@@ -830,10 +814,11 @@ p {
   display: block;
   transition: box-shadow var(--transition-time);
 }
-
-.example-link:hover,
-.example-link:focus {
+.example-link:hover, .example-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.example-link:hover .overlay, .example-link:focus .overlay {
+  transform: translateY(0);
 }
 
 .examples .card-description {
@@ -872,10 +857,6 @@ p {
   transform: translateY(100%);
   transition: transform var(--transition-time);
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.example-link:hover .overlay {
-  transform: translateY(0);
 }
 
 .example-description {

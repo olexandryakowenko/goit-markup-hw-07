@@ -48,13 +48,11 @@
   background: var(--accent-color);
   transition: var(--transition-time);
   cursor: pointer;
-}
-
-.hero-button-modal:active {
-  background-color: #188ce8;
-}
-
-.hero-button-modal:focus,
-.hero-button-modal:hover {
-  background-color: #188ce8;
+  &:active {
+    background-color: #188ce8;
+  }
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
 }

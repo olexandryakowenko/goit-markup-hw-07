@@ -91,12 +91,16 @@
 .icon-smartphone {
   fill: currentColor;
   margin-right: 10px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
-.icon-envelope:hover,
-.icon-smartphone:hover {
-  fill: var(--accent-color);
-}
+// .icon-envelope:hover,
+// .icon-smartphone:hover {
+//   fill: var(--accent-color);
+// }
 
 .features.section {
   padding-top: 94px;
