@@ -103,21 +103,19 @@ p {
 .top {
   border-bottom: 1px solid #ececec;
 }
-
 .top .container {
   display: flex;
   align-items: center;
+}
+.top .logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 94px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-}
-
-.top .logo {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-right: 94px;
 }
 
 .logo {
@@ -145,12 +143,10 @@ p {
   color: var(--nav-link-text-color);
   transition: color var(--transition-time);
 }
-
 .nav-link.current {
   color: var(--accent-color);
   position: relative;
 }
-
 .nav-link.current::after {
   position: absolute;
   left: 0;
@@ -176,6 +172,10 @@ p {
   transition: color var(--transition-time);
   color: var(--primary-text-color);
 }
+.top .contact-link:hover, .top .contact-link:focus {
+  color: var(--accent-color);
+  transition: var(--transition-time);
+}
 
 .nav-link,
 .top .contact-link {
@@ -195,7 +195,7 @@ p {
 
 .icon-envelope:hover,
 .icon-smartphone:hover {
-  fill: currentColor;
+  fill: var(--accent-color);
 }
 
 .features.section {
@@ -207,20 +207,27 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer .contact-link:hover, .footer .contact-link:focus {
+  color: var(--accent-color);
+}
+.footer .contact-link {
+  line-height: 1.71;
+  font-style: normal;
+  transition: color var(--transition-time);
+  color: var(--footer-contacts-color);
+}
 .footer .container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
+.footer .logo {
+  margin-bottom: 20px;
+}
 
 .address-container {
   width: 231px;
   margin-right: 70px;
-}
-
-.footer .logo {
-  margin-bottom: 20px;
 }
 
 .footer-logo-studio {
@@ -237,18 +244,6 @@ p {
   color: var(--secondary-text-color);
 }
 
-.footer .contact-link {
-  line-height: 1.71;
-  font-style: normal;
-  transition: color var(--transition-time);
-  color: var(--footer-contacts-color);
-}
-
-.footer .contact-link:hover,
-.footer .contact-link:focus {
-  color: var(--accent-color);
-}
-
 .join-title {
   font-size: 14px;
   margin-bottom: 20px;
@@ -261,9 +256,7 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-time);
 }
-
-.join .social-link:hover,
-.join .social-link:focus {
+.join .social-link:hover, .join .social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -545,7 +538,7 @@ p {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../studio.png");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio.png");
   background-color: var(--bg-hero-color);
   background-repeat: no-repeat;
   background-position: center;
