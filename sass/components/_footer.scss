@@ -21,6 +21,9 @@
   & .logo {
     margin-bottom: 20px;
   }
+  .footer-icon {
+    fill: #ffffff;
+  }
 }
 
 .address-container {
@@ -59,8 +62,4 @@
   &:focus {
     background-color: var(--accent-color);
   }
-}
-
-.footer-icon {
-  fill: #ffffff;
 }
